@@ -23,6 +23,7 @@ systemctl
 ```shell
 systemctl start nfs-server.service . # 启动nfs服务
 systemctl enable nfs-server.service # 设置开机自启动
+systemctl enable nfs-server.service --now # 设置开机自启动，并且立即启动
 systemctl disable nfs-server.service # 停止开机自启动
 systemctl status nfs-server.service # 查看服务当前状态
 systemctl restart nfs-server.service # 重新启动某服务
@@ -48,6 +49,3 @@ sudo systemctl status firewalld.service
 sudo systemctl stop firewalld.service          
 sudo systemctl disable firewalld.service
 ```
-
-
-
